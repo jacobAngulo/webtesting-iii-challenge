@@ -10,4 +10,13 @@ describe("<Display />", () => {
     const tree = renderer.create(<Display />).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it("is mocking me", () => {
+    const mock = jest.fn();
+
+    const result = mock();
+
+    expect(result).toBeUndefined();
+    expect(mock).toHaveBeenCalledTimes(1);
+  });
 });

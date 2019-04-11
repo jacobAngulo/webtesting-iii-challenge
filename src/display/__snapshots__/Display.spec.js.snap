@@ -6,11 +6,13 @@ exports[`<Display /> matches snapshot 1`] = `
 >
   <div
     className="led green-led"
+    data-testid="lock-display"
   >
     Unlocked
   </div>
   <div
     className="led green-led"
+    data-testid="close-display"
   >
     Open
   </div>
